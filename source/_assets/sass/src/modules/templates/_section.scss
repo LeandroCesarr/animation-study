@@ -1,0 +1,13 @@
+.t-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @for $i from 1 to 5 {
+    &:nth-child(#{$i}) {
+      background-color: var(--color-#{$i});
+    }
+  }
+}

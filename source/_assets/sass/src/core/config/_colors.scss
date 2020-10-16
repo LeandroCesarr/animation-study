@@ -1,0 +1,13 @@
+$colors: (
+  1: #1B264F,
+  2: #274690,
+  3: #576ca8,
+  4: #302b27,
+  5: #f5f3f5,
+);
+
+:root {
+  @each $name, $value in $colors {
+    --color-#{$name}: #{$value};
+  }
+}
